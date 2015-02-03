@@ -44,3 +44,6 @@ Temporary Items
 
 #Compiled files for Python
 *.pyc
+
+#Ignore SQLite3 DB File
+*.sqlite3
