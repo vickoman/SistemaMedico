@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+#Nombre del Admin y correo electrónico
+ADMINS = (
+    ('Roberth Solis Martinez', 'roberth.solis@gmail.com')
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -26,6 +30,10 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#Dirección donde estarán alojados los templates | usar "print(TEMPLATE_DIRS)" para visualizar la dirección
+TEMPLATE_DIRS = (
+    os.path.join("templates"),
+)
 
 # Application definition
 
@@ -67,6 +75,8 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
+
+#Lenguaje que aparecerá el Admin o Lenguaje de Desarrollo 'es-es' = Español España
 LANGUAGE_CODE = 'es-es'
 
 TIME_ZONE = 'UTC'
