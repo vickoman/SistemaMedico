@@ -5,7 +5,7 @@ from .models import Paciente
 from citas.models import Cita
 
 # Agrega citas debajo del modelo Paciente en la interfaz del Admin
-class CitaEnLinea(admin.StackedInline):
+class CitaEnLinea(admin.TabularInline):
  	model 	= Cita
  	extra	= 3
 
