@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 #Modelo Paciente
 class Paciente(models.Model):
@@ -12,7 +13,7 @@ class Paciente(models.Model):
 	enfermedad	= models.CharField(max_length=200)
 	alergia		= models.BooleanField(default=False)
 	observacion = models.TextField()
-	edad 		= models.IntegerField()
+	fecha_nac	= models.DateField()
 
 	#Concatena y devuelve el nombre con apellidos, use __str__ in Python 3.4.x
 	def __unicode__(self):
