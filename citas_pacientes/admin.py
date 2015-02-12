@@ -11,7 +11,7 @@ class CitaEnLinea(admin.StackedInline):
 class PacienteAdmin(admin.ModelAdmin):
 
 	fieldsets = [
-		('Datos de Contacto',	{'fields': ['cedula','nombre','apellidos','telefono','direccion']}),
+		('Datos de Contacto',	{'fields': ['cedula','nombre','apellidos','edad','telefono','direccion']}),
 		('Detalles del Paciente', {'fields': ['medicamento','enfermedad','alergia','observacion']}),
 	]
 

@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 #Nombre del Admin y correo electrónico
 ADMINS = (
-    ('Roberth Solis Martinez', 'roberth.solis@gmail.com')
+    ('Roberth Solís Martínez', 'roberth.solis@gmail.com')
 )
 
 # Quick-start development settings - unsuitable for production
@@ -39,13 +39,15 @@ TEMPLATE_DIRS = (
 # Application definition
 
 INSTALLED_APPS = (
+    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'citas_pacientes',
+    'citas',
+    'pacientes',
 )
 
 MIDDLEWARE_CLASSES = (
