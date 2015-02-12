@@ -1,6 +1,8 @@
 from django.db import models
 import datetime
 
+from pacientes.models import Paciente
+
 #Modelo Citas, toda cita tiene un paciente(ForeignKey:Paciente)
 class Cita(models.Model):
 

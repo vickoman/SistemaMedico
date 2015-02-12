@@ -14,7 +14,7 @@ class Paciente(models.Model):
 	observacion = models.TextField()
 	edad 		= models.IntegerField()
 
-	#Concatena y devuelve el nombre con apellidos, using __str__ in Python 3.4.x
+	#Concatena y devuelve el nombre con apellidos, use __str__ in Python 3.4.x
 	def __unicode__(self):
 		nombreCompleto = "%s %s"%(self.nombre, self.apellidos)
 		return nombreCompleto
